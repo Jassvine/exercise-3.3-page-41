@@ -1,0 +1,14 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int mass, velocity;
+	cout << "input object mass (in kg)\n\n";
+	cin >> mass;
+	cout << "input object velocity (in meters per second)\n\n";
+	cin >> velocity;
+	cout << "the kientic energy of object is  " <<  (0.5*mass)*(velocity*velocity) <<  "Joules" << endl;
+
+}
