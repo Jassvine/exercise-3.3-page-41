@@ -1,0 +1,18 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+#define SCND_TO_HOUR 3600
+#define SCND_TO_MINUTE 60
+int main()
+{
+	int totSec, sec, min, hours;
+	cout << "input TOTAL number of seconds\n";
+	cin >> totSec;
+	hours = totSec / SCND_TO_HOUR;
+	min = (totSec - (hours * SCND_TO_HOUR)) / SCND_TO_MINUTE;
+	sec = totSec - ((hours * SCND_TO_HOUR) + (min * SCND_TO_MINUTE));
+
+	cout << totSec << " are equals to " << hours << "  hour(s) , " << min << "  minute(s) and  " << sec << " second(s)" << endl;
+	return 0;
+}
+
